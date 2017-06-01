@@ -198,13 +198,13 @@ public class MatchingFrame extends JFrame {
 		JButton btnPlay = new JButton("Play");
 		btnPlay.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				ArrayList <ImageIcon> temp = new ArrayList();
+				ArrayList <Integer> temp = new ArrayList();
 				for(int i=16;i>0;i--){
-					temp.add(cardset.get((int)Math.floor(i/2)));
+					temp.add();
 				}
 				for(int i=16;i>0;i--){
 					int n = (int)(Math.floor(Math.random()*i));
-					cards.add(temp.get(n));
+					cards.add();
 					temp.remove(n);
 				}
 			}
